@@ -1,0 +1,78 @@
+/* App.css */
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+.form-section {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.summary-section {
+  flex: 1;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+h1, h2 {
+  margin: 10px 0;
+}
+
+nav {
+  margin: 10px 0;
+}
+
+nav span.active {
+  font-weight: bold;
+}
+
+input, select, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox label {
+  margin-left: 5px;
+}
+
+.name-fields, .address-fields {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-fields input, .address-fields input, .address-fields select {
+  width: 48%;
+}
+
+button {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.total {
+  font-weight: bold;
+}
