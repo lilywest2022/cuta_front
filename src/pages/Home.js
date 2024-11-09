@@ -10,6 +10,7 @@ import Footer from '../components/Footer';
 import Purchase from '../components/Purchase';
 import GameWindow from '../components/GameWindow';
 import FAQ from '../components/FAQ';  
+import Commodity from '../components/Commodity';
 import { useTranslation } from 'react-i18next';
 
 
@@ -19,7 +20,8 @@ function Home({ changeLanguage }) {
   return (
     <>
       <Header changeLanguage={changeLanguage} />
-      <Banner />
+      {/* <Banner /> */}
+      <Commodity/>
       <About />
       <Features />
       <Features2 />
