@@ -1,8 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import styled from 'styled-components'; // 确保已安装并导入styled-components
+import styled from 'styled-components'; 
 
-// 创建样式化组件
 const PurchaseContainer = styled.div`
   width: 100vw;
   min-height: 100vh;

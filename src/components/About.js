@@ -24,7 +24,7 @@ function About() {
     indexAbout: {
       position: 'relative',
       backgroundColor: 'black',
-      margin: '-4px 0 0 0',  // 添加负边距消除间隙
+      margin: '-4px 0 0 0',  // 负边距消除间隙
       padding: 0,
       display: 'block'
     },

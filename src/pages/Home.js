@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from '../components/Header';
-import Banner from '../components/Banner';
 import About from '../components/About';
 import Features from '../components/Features';
 import Features2 from '../components/Features2';
@@ -16,12 +15,11 @@ import { useTranslation } from 'react-i18next';
 
 function Home({ changeLanguage }) {
   const { t } = useTranslation();
-
+ß
   return (
     <>
       <Header changeLanguage={changeLanguage} />
-      {/* <Banner /> */}
-      <Commodity/>
+≈      <Commodity/>
       <About />
       <Features />
       <Features2 />

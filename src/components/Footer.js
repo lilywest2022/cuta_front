@@ -7,6 +7,8 @@ const FooterContainer = styled.footer`
   color: #fff;
   padding: 40px 5%;
   width: 100%;
+  margin: 0;
+  box-sizing: border-box;
 `;
 
 const ContentWrapper = styled.div`
@@ -16,6 +18,8 @@ const ContentWrapper = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
+  box-sizing: border-box;
+  padding: 0;
   
   @media (max-width: 768px) {
     flex-direction: column;
@@ -65,7 +69,7 @@ const QRCodeItem = styled.div`
   text-align: center;
   
   img {
-    width: clamp(120px, 15vw, 180px);
+    width: clamp(100px, 12vw, 150px);
     height: auto;
     margin-bottom: 15px;
   }

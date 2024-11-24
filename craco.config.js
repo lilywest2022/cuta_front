@@ -3,7 +3,11 @@ const webpack = require('webpack');
 module.exports = {
   webpack: {
     configure: (webpackConfig) => {
-      // 修改现有的配置
+      webpackConfig.ignoreWarnings = [
+        /Failed to parse source map/,
+        /Module Warning/,
+      ];
+
       webpackConfig.resolve.fallback = {
         ...webpackConfig.resolve.fallback,
         crypto: require.resolve('crypto-browserify'),
@@ -16,6 +20,7 @@ module.exports = {
         util: require.resolve('util'),
         url: require.resolve('url'),
         assert: require.resolve('assert'),
+        vm: require.resolve('vm-browserify'),
       };
 
       webpackConfig.plugins = [
@@ -24,12 +29,9 @@ module.exports = {
           process: 'process/browser',
           Buffer: ['buffer', 'Buffer'],
         }),
-        new webpack.DefinePlugin({
-          'process.env': JSON.stringify(process.env)
-        })
       ];
 
       return webpackConfig;
-    }
-  }
+    },
+  },
 };

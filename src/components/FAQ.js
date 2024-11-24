@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const FAQContainer = styled.div`
-  width: 100vw; // 修改：使用视窗宽度
-  min-height: 100vh; // 添加：确保至少占满整个视窗高度
+  width: 100vw; // 使用视窗宽度
+  min-height: 100vh; // 确保至少占满整个视窗高度
   margin: 0; // 移除自动边距
   padding: 40px 20px; // 调整内边距
   background-color: black;

@@ -100,7 +100,6 @@ function Features() {
       title: t('features.market.title'),
       description: t('features.market.description')
     }
-    // 可以继续添加更多特性
   ];
 
   return (
